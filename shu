@@ -1,0 +1,10 @@
+CloudDeploy[
+ FormFunction[{{"x", "Find the population of this country:"} -> 
+    "ComputedCountry"}, CountryData[#x, "Population"] &], 
+ Permissions -> "Public"]
+ CountryData["UnitedStates", "Population"]
+ Interpreter["ComputedCountry"] /@ {"US", "usa", "u.s.a.", "America"}
+ CloudDeploy[
+ FormFunction[{{"x", "Find the population of this country:"} -> 
+    "ComputedCountry"}, CountryData[#x, "Population"] &], 
+ Permissions -> "Public"]
